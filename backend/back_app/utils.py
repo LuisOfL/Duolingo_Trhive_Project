@@ -108,6 +108,8 @@ def buscar_chunks_cercanos(vector_consulta: list, k: int = 3) -> list:
             connection.close()
 
 
+
+
 def generar_respuesta_rag(pregunta: str, chunks_cercanos: list, model_id: str = "google.gemma-3-12b-it", region_name: str = "us-east-1") -> str:
     """
     Toma la pregunta del usuario y los chunks recuperados de RDS, construye un contexto 
