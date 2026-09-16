@@ -3,6 +3,12 @@ https://es.duolingo.com/help/why-did-my-course-change
 https://es.duolingo.com/help/what-is-a-streak
 https://es.duolingo.com/help/leaderboards-and-league
 https://es.duolingo.com/help/open-source-libraries
+https://es.duolingo.com/help/change-my-username-email-address
+https://es.duolingo.com/help/find-follow-and-block-users
+https://es.duolingo.com/help/remove-or-reset-a-course
+https://es.duolingo.com/help/trouble-accessing-my-account
+https://es.duolingo.com/help/delete-my-account-and-data
+https://es.duolingo.com/help/what-to-do-if-your-data-was-compromised
 
 
 
