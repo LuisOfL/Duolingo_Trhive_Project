@@ -1,40 +1,40 @@
-# Duolingo Thrive: RAG System para Datos de Soporte
+# Duolingo Thrive: Support Data RAG System
 
-¡Hola y bienvenido al proyecto! Este repositorio contiene una solución basada en **RAG (Retrieval-Augmented Generation)** diseñada específicamente para potenciar y agilizar el soporte en **Duolingo Thrive**.
-![Texto alternativo si la imagen no carga](img/duolingo.png)
+Hello and welcome to the project! This repository contains a **RAG (Retrieval-Augmented Generation)** based solution specifically designed to empower and streamline support in **Duolingo Thrive**.
+![Alt text if image fails to load](img/duolingo.png)
 ---
 
-## 🚀 Presentación del Proyecto
+## 🚀 Project Overview
 
-El objetivo de este proyecto es conectar un modelo de lenguaje con la base de conocimientos y datos de soporte de Duolingo Thrive. Gracias a la arquitectura RAG, el sistema es capaz de buscar información precisa en los documentos de ayuda y generar respuestas contextualizadas, exactas y rápidas para los usuarios o agentes de soporte.
+The goal of this project is to connect a language model with Duolingo Thrive's support data and knowledge base. Thanks to the RAG architecture, the system is capable of searching for accurate information within help documents and generating contextual, precise, and fast responses for users or support agents.
 
-### Características Principales
-- **Búsqueda Semántica:** Recuperación de fragmentos de soporte relevantes mediante embeddings vectoriales.
-- **Generación Contextual:** Respuestas precisas basadas exclusivamente en la documentación oficial de Duolingo Thrive.
-- **Eficiencia:** Reducción de tiempos de respuesta en las consultas de soporte.
+### Key Features
+- **Semantic Search:** Retrieval of relevant support fragments using vector embeddings.
+- **Contextual Generation:** Precise answers based exclusively on official Duolingo Thrive documentation.
+- **Efficiency:** Reduced response times for support inquiries.
 
 ---
 
-## 🏗️ Arquitectura y Funcionamiento
+## 🏗️ Architecture and Workflow
 
-El flujo del sistema RAG opera en los siguientes pasos:
+The RAG system workflow operates in the following steps:
 
-1. **Ingesta y Procesamiento de Datos:** Los documentos de soporte de Duolingo Thrive (PDFs, Markdown, FAQs) se limpian y se dividen en fragmentos (*chunks*).
-2. **Vectorización (Embeddings):** Cada fragmento se convierte en un vector numérico utilizando un modelo de embeddings y se almacena en una base de datos vectorial.
-3. **Recuperación (Retrieval):** Cuando un usuario realiza una consulta, el sistema busca los fragmentos vectoriales más cercanos semánticamente a la pregunta.
-4. **Generación (Generation):** La consulta del usuario junto con el contexto recuperado se envían al LLM para redactar una respuesta coherente y fundamentada.
+1. **Data Ingestion and Processing:** Duolingo Thrive support documents (PDFs, Markdown, FAQs) are cleaned and split into chunks.
+2. **Vectorization (Embeddings):** Each chunk is converted into a numerical vector using an embedding model and stored in a vector database.
+3. **Retrieval:** When a user makes a query, the system searches for the vector fragments most semantically relevant to the question.
+4. **Generation:** The user query along with the retrieved context are sent to the LLM to draft a coherent and well-founded response.
 
-```
-[ Consulta del Usuario ] 
+
+[ User Query ]
         │
         ▼
-[ Buscador Vectorial ] ──( Recupera contexto )──> [ Base de Datos Vectorial ]
+[ Vector Searcher ] ──( Retrieves context )──> [ Vector Database ]
         │
         ▼
-[ LLM (Generación) ] <──( Contexto + Pregunta )
+[ LLM (Generation) ] <──( Context + Question )
         │
         ▼
-[ Respuesta Final para Soporte ]
+[ Final Support Response ]
 ```
 
 ---
