@@ -1,7 +1,7 @@
 # Duolingo Thrive: RAG System para Datos de Soporte
 
 ¡Hola y bienvenido al proyecto! Este repositorio contiene una solución basada en **RAG (Retrieval-Augmented Generation)** diseñada específicamente para potenciar y agilizar el soporte en **Duolingo Thrive**.
-![Texto alternativo si la imagen no carga](img/example.png)
+![Texto alternativo si la imagen no carga](img/duolingo.png)
 ---
 
 ## 🚀 Presentación del Proyecto
